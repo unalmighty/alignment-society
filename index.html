@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Alignment Society – Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <img src="assets/logo.svg" alt="Alignment Society Logo" class="logo">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="tools.html">Tools</a>
-      <a href="team.html">Team</a>
-      <a href="join.html">Join</a>
-    </nav>
-    <div class="container">
-      <header>
-        <h1>Welcome to The Alignment Society</h1>
-        <p>Where everything is aligned – including our alignment.</p>
-      </header>
-      <section>
-        <h2>Alignment Thermometer</h2>
-        <p>We continuously measure how aligned you are with our vision.</p>
-        <div id="thermometer" class="thermometer">
-          <div id="thermoBar" class="thermo-bar">0%</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Alignment Society — Home</title>
+  <meta name="description" content="A lovingly satirical corporate site about synergy, impact, and being extremely aligned." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body data-page="home">
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="https://unalmighty.github.io/alignment-society/index.html">
+        <img src="assets/logo.svg" alt="Alignment Society"/>
+        <span>Alignment Society</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="services.html" data-nav="services">Services</a>
+        <a href="tools.html" data-nav="tools">Tools</a>
+        <a class="cta" href="join.html" data-nav="join">Join</a>
+      </nav>
+    </header>
+    <main class="hero">
+      <div>
+        <span class="chip">Case Study Free • 30min Synergy Scan</span>
+        <h1>We align your alignment so your impact can be measurably impactful.</h1>
+        <p>Our proprietary <em>Consensus‑First™ Framework</em> helps ambitious organisations achieve proactive agreement at scale. Is your strategy aligned with your alignment strategy?</p>
+        <div class="cta-row">
+          <button class="btn primary" data-action="generate-impact">Generate an Impact Statement</button>
+          <a class="btn ghost" href="join.html">Schedule a Synergy →</a>
         </div>
-      </section>
-      <section>
-        <h2>Impactful Statements</h2>
-        <p>Need to sound like you know what you’re talking about? Generate a corporate‑friendly sentence here.</p>
-        <div class="impact-generator">
-          <button type="button" onclick="generateImpactfulStatement()">Generate</button>
-          <input type="text" id="impactOut" readonly placeholder="Your impactful statement will appear here…" />
-          <button type="button" onclick="copyImpactStatement()">Copy</button>
+        <div class="row" style="margin-top:10px">
+          <input id="impactOut" type="text" readonly placeholder="Your impactful statement appears here…" />
+          <button class="btn primary" data-action="regen">Generate</button>
+          <button class="btn ghost" data-action="copy">Copy</button>
         </div>
-      </section>
-    </div>
-    <footer>
-      &copy; 2025 The Alignment Society – All rights aligned.
-    </footer>
-  </body>
+      </div>
+      <aside class="card">
+        <h3>Alignment Thermometer</h3>
+        <p class="muted">Scientifically precise within ±100%.</p>
+        <div class="meter">
+          <div class="bar"><span id="barFill"></span></div>
+          <div class="meter-scale"><span>Disagreeing</span><span id="meterPct">0%</span><span>Fully Aligned</span></div>
+          <div class="row">
+            <button class="btn ghost" data-action="less">− Decrease</button>
+            <button class="btn primary" data-action="more">+ Increase</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <section class="section">
+      <h2>What we do</h2>
+      <p class="muted">Premium jargon for premium outcomes.</p>
+      <div class="card-grid">
+        <div class="card"><h3>Alignment Audits</h3><p class="muted">360° visibility into 720° alignment. We double‑count so you don’t have to.</p></div>
+        <div class="card"><h3>Synergy Orchestration</h3><p class="muted">We harmonise cross‑functional harmonisation to unlock alignment synergies.</p></div>
+        <div class="card"><h3>Impactful Analytics</h3><p class="muted">We quantify qualitative impacts with a proprietary unit: <strong>Imps</strong>.</p></div>
+      </div>
+    </section>
+    <footer class="site-footer">© <span id="year"></span> The Alignment Society. A parody. Please do not use for actual strategic decisions.</footer>
+  </div>
+</body>
 </html>
