@@ -45,3 +45,39 @@ input[type="text"]{width:100%; background:#0b102b; border:1px solid #2b3160; bor
   .card-grid{grid-template-columns:1fr}
   .tools-grid{grid-template-columns:1fr}
 }
+
+/* Make Mailchimp form less boxy */
+#mc_embed_signup {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+}
+
+#mc_embed_signup h2 {
+  display: none; /* Hide the big “Subscribe” header */
+}
+
+#mc_embed_signup input.email {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
+}
+
+#mc_embed_signup .button {
+  background-color: #007bff !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  margin-top: 0.5rem;
+}
+
+#mc_embed_signup .mc-field-group,
+#mc_embed_signup .clear {
+  margin: 0.5rem 0;
+}
