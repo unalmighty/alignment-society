@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Alignment Society — Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body data-page="tools">
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="/"><img src="assets/logo.svg" alt=""/><span>Alignment Society</span></a>
+      <nav class="nav">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="services.html" data-nav="services">Services</a>
+        <a href="tools.html" data-nav="tools">Tools</a>
+        <a class="cta" href="join.html" data-nav="join">Join</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Tools</h1>
+      <div class="tools-grid">
+        <div class="tool">
+          <h3>Impactful Statement Generator</h3>
+          <p class="small">Because every paragraph should say very little, very loudly.</p>
+          <div class="row"><input id="impactOut" type="text" readonly placeholder="Click Generate…" /><button class="btn primary" data-action="regen">Generate</button><button class="btn ghost" data-action="copy">Copy</button></div>
+        </div>
+        <div class="tool">
+          <h3>Alignment Bingo</h3>
+          <p class="small">Click tiles as they appear in meetings. Get a row? Shout “fully aligned”.</p>
+          <div class="bingo" id="bingo"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">© <span id="year"></span> The Alignment Society.</footer>
+  </div>
+</body>
+</html>
