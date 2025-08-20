@@ -8,12 +8,22 @@ body {
 }
 
 nav {
-  background-color: #222;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+      background-color: #222;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      /* Layout the logo and links horizontally */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+}
+
+/* Display the logo nicely in the nav */
+nav img.logo {
+      height: 32px;
+      margin-right: 0.5rem;
+      /* Prevent the logo from stretching to fill available space */
+      flex-shrink: 0;
 }
 
 nav a {
